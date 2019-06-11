@@ -46,6 +46,41 @@ for p in sorted_products:
 # Departments (part 2)
 #
 
+
+departments = []
+
+for p in products:
+    
+    if p["department"] not in departments:
+        departments.append(p["department"])
+
+
+def department_form(departments):
+  return [department for department in departments if department["department"] == department]
+departments
+
+department_count = len(departments)
+
 print("---------------------")
-print("THERE ARE 10 DEPARTMENTS:")
+print("THERE ARE " + str(department_count) + " DEPARTMENTS:")
 print("---------------------")
+
+
+for d in departments:
+    print(d)
+
+
+
+
+#  + Babies (1 product)
+#  + Beverages (5 products)
+#  + Dairy Eggs (1 product)
+#  + Dry Goods Pasta (1 product)
+#  + Frozen (4 products)
+#  + Household (1 product)
+#  + Meat Seafood (1 product)
+#  + Pantry (2 products)
+#  + Personal Care (2 products)
+#  + Snacks (2 products
+
+# print(d[departments] + "(1 products)")
