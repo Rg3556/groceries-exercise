@@ -90,3 +90,9 @@ for d in unique_departments:
 #  + Personal Care (2 products)
 #  + Snacks (2 products
 
+
+## Automated Test
+
+if __name__ == "__main__":
+    def to_usd (my_price):
+        return "${0:.2f}".format(my_price)
