@@ -70,12 +70,10 @@ print("---------------------")
 unique_departments.sort()
 
 for d in unique_departments:
-    print(d.title())
+    matching_products = [p for p in products if p["department"] == d]
+    matching_products_count = len(matching_products)
+    print(d.title()+ " (" + str(matching_products_count) + " products)")
 
-
-def department_form(departments):
-  return [department for department in departments if department["department"] == department]
-departments
 
 #  + Babies (1 product)
 #  + Beverages (5 products)
@@ -88,4 +86,3 @@ departments
 #  + Personal Care (2 products)
 #  + Snacks (2 products
 
-# print(d[departments] + "(1 products)")
