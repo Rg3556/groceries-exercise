@@ -42,5 +42,10 @@ for p in sorted_products:
     print(" + " + p["name"] + " (" + str(price_usd) + ")")
 
 
+#
+# Departments (part 2)
+#
 
-
+print("---------------------")
+print("THERE ARE 10 DEPARTMENTS:")
+print("---------------------")
