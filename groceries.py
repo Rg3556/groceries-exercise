@@ -54,15 +54,12 @@ departments = []
 #     if p["department"] not in departments:
 #         departments.append(p["department"])
 
-
+# SET option for deleting duplicates
 for p in products:
         departments.append(p["department"])
 
 unique_departments = list(set(departments))
 
-def department_form(departments):
-  return [department for department in departments if department["department"] == department]
-departments
 
 department_count = len(unique_departments)
 
@@ -70,12 +67,15 @@ print("---------------------")
 print("THERE ARE " + str(department_count) + " DEPARTMENTS:")
 print("---------------------")
 
+unique_departments.sort()
 
 for d in unique_departments:
-    print(d)
+    print(d.title())
 
 
-
+def department_form(departments):
+  return [department for department in departments if department["department"] == department]
+departments
 
 #  + Babies (1 product)
 #  + Beverages (5 products)
